@@ -3,12 +3,10 @@
 MyModel::MyModel(QObject *parent)
     :QAbstractTableModel(parent)
 {
-    Apartment* std1 = new Apartment("101","Енисей","5550","Байкал","19800","2580",this);
-    Apartment* std2 = new Apartment("102","Обь","5410","Иртыш","12300","2990",this);
-    Apartment* std3 = new Apartment("103","Волга","3731","Ока","8060","1360",this);
+    Apartment* std1 = new Apartment("1","Советский","40","2","3","Кирпич",this);
+    Apartment* std2 = new Apartment("2","Ленинский","72","2","4","Кирпич",this);
     AddApartment(std1);
     AddApartment(std2);
-    AddApartment(std3);
 }
 
 int MyModel::rowCount(const QModelIndex &) const
@@ -102,6 +100,5 @@ void MyModel::DeleteApartment(int row)
     beginRemoveRows(QModelIndex(),row,row);
     apartments.removeAt(row);
     endRemoveRows();
-    //emit layoutChanged();
 }
 
