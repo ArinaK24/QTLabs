@@ -1,13 +1,8 @@
 #include "apartment.h"
 
-Apartment::Apartment(/*QString ID, QString Area, QString Space, QString Rooms, QString Floor, QString Material, QObject *parent): QObject(parent)*/)
+Apartment::Apartment()
 {
-    /*id = ID;
-    area = Area;
-    space = Space;
-    rooms = Rooms;
-    floor = Floor;
-    material = Material;*/
+
 }
 
 void Apartment::SetID(const QString ID)

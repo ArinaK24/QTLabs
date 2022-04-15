@@ -1,14 +1,13 @@
 #ifndef APARTMENT_H
 #define APARTMENT_H
 #include "QString"
-#include <QObject>
 
-class Apartment /*public QObject*/
+
+class Apartment
 {
-   // Q_OBJECT
 
 public:
-    Apartment(/*QString ID, QString Area, QString Space, QString Rooms, QString Floor, QString Material, QObject *parent = nullptr*/ );
+    Apartment();
     virtual ~Apartment();
     void SetID(const QString ID);
     void SetArea(const QString Area);
